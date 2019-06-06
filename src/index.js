@@ -13,7 +13,7 @@ app.use(morgan('dev')); //Para ver por consola las peticiones que llegan al serv
 app.use(express.json()); //Cada vez que llegue una peticion va comprovar que sean un json
 
 // Routes
-app.use('/api/staks',require('./routes/task.routes'));
+app.use('/api/tasks',require('./routes/task.routes'));
 
 // Static files Enviamos el html al cliente.
 app.use(express.static(path.join(__dirname, 'public'))); //path.join Une las rutas independientemente de unix, windows.
